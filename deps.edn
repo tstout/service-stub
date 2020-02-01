@@ -1,0 +1,9 @@
+{:paths ["resources" "src"]
+ :deps {clj-commons/iapetos {:mvn/version "0.1.9"}
+        com.h2database/h2 {:mvn/version "1.4.197"}
+        com.taoensso/timbre {:mvn/version "4.10.0"}
+        io.prometheus/simpleclient_hotspot {:mvn/version "0.6.0"}
+        org.clojure/java.jdbc {:mvn/version "0.7.5"}
+        ring/ring-core {:mvn/version "1.8.0"}
+        ring/ring-jetty-adapter {:mvn/version "1.8.0"}}
+ :aliases {:dev {:extra-deps {ring/ring-devel {:mvn/version "1.8.0"}}}}}

@@ -2,7 +2,7 @@
   (:require
    [clojure.edn :as edn]
    [taoensso.timbre :as log]
-   [service-stub.conf :refer [load-res]]))
+   [service-stub.conf :refer [memoized-res]]))
 
 (defn wrap-env
   "Add environment information into the ring request.
@@ -46,9 +46,8 @@
   (mk-response "Hello World"))
 
 (defmethod router :receipt [request]
-  ;; TODO - change this such that the resource is not loaded on every call.
   (log/infof "responding with stub receipt response for query %s" (request :query-string))
-  (mk-response (load-res "json/receipt.json")))
+  (mk-response (memoized-res "json/receipt.json")))
 
 (defmethod router :default [_]
   (mk-response {} 400))

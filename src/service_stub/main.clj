@@ -37,10 +37,11 @@
 (defmulti router
   (fn [request]
     (let [{:keys [uri request-method]} request]
+      (log/infof "URI is %s" uri)
       (->
        uri
        {"/hello" ({:get :hello} request-method)
-        "/receipt-services/order" ({:get :receipt} request-method)}))))
+        "/receipt-services/receipt" ({:get :receipt} request-method)}))))
 
 (defmethod router :hello [_]
   (mk-response "Hello World"))
@@ -49,8 +50,10 @@
   (log/infof "responding with stub receipt response for query %s" (request :query-string))
   (mk-response (memoized-res "json/receipt.json")))
 
-(defmethod router :default [_]
-  (mk-response {} 400))
+(defmethod router :default [request]
+  (let [{:keys [uri]} request]
+    (log/infof "Unrecognized URI %s" uri)
+    (mk-response (str "Unknown URI " uri) 400)))
 
 (defn handler [request]
   (let [{:keys [uri]} request]
@@ -60,6 +63,7 @@
 (comment
   ;; REPL experiments
   (router {:uri "/hello" :request-method :get})
-  (router {:uri "/receipt-services/order?id=20" :request-method :get})
+
+  (router {:uri "/receipt-services/receipt" :request-method :get})
   ;;
   )

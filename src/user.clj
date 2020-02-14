@@ -17,10 +17,10 @@
   "Start the web app"
   []
   (sys/start :dev)
-  (log/info "Starting server on port 3000")
+  (log/info "Starting server on port 4000")
   (run-jetty (-> #'handler
                  (wrap-env :dev)
                  (wrap-reload)
                  (ring/wrap-metrics registry))
              {:join? false
-              :port 3000}))
+              :port 4000}))

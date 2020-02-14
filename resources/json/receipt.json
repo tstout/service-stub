@@ -1,121 +1,120 @@
 {
-  "order": {
-    "storeInfo": {
-      "city": "San Antonio",
-      "state": "TX",
-      "zip": "78216",
-      "address": "333 NW Loop 410",
-      "phone": "(210) 341-7848",
-      "fax": "(210) 341-3823",
-      "vmcpMerch": "489245",
-      "amexMerch": "1290336056",
-      "discMerch": "501102709955445",
-      "topBanner": [
-        "Make Your Dream Closet",
-        "A Reality!",
-        "Let Us Design It Today!"
-      ],
-      "bottomReceiptBanner": [
-        "Now Hiring! Apply today at",
-        "containerstore.com/careers",
-        "Come be a part of one of the best",
-        "companies in the country to work for.",
-        "",
-        "Our Return Promise:",
-        "If the products you purchased don't",
-        "meet your expectations, please return",
-        "to us for another solution or for a",
-        "refund. See containerstore.com/help",
-        "for full details. Some restrictions",
-        "may apply."
-      ],
-      "bottomBanner": [
-        "containerstore.com",
-        "1-800-733-3532",
-        "",
-        "",
-        "Our Blog standfor.containerstore.com",
-        "Find us on Facebook",
-        "Follow us on Twitter"
-      ]
-    },
-    "orderInfo": {
-      "orderNumber": "799105436417",
-      "training": "production",
-      "register": "WEB",
-      "agent": "WEB",
-      "date": "2017-11-26 18:39:43"
-    },
-    "fulfillmentInfo": {
-      "fgType": "pickup",
-      "fgStore": "6",
-      "fgDate": "12/01/17",
-      "fgTime": "5:00PM",
-      "fgNameFirst": "Alga Rithm",
-      "fGNameLast": true,
-      "items": [
+  "storeInfo": {
+    "city": "San Antonio",
+    "state": "TX",
+    "zip": "78216",
+    "address": "333 NW Loop 410",
+    "phone": "(210) 341-7848",
+    "fax": "(210) 341-3823",
+    "vmcpMerch": "489245",
+    "amexMerch": "1290336056",
+    "discMerch": "501102709955445",
+    "topBanner": [
+      "Make Your Dream Closet",
+      "A Reality!",
+      "Let Us Design It Today!"
+    ],
+    "bottomReceiptBanner": [
+      "Now Hiring! Apply today at",
+      "containerstore.com/careers",
+      "Come be a part of one of the best",
+      "companies in the country to work for.",
+      "",
+      "Our Return Promise:",
+      "If the products you purchased don't",
+      "meet your expectations, please return",
+      "to us for another solution or for a",
+      "refund. See containerstore.com/help",
+      "for full details. Some restrictions",
+      "may apply."
+    ],
+    "bottomBanner": [
+      "containerstore.com",
+      "1-800-733-3532",
+      "",
+      "",
+      "Our Blog standfor.containerstore.com",
+      "Find us on Facebook",
+      "Follow us on Twitter"
+    ]
+  },
+  "orderInfo": {
+    "orderNumber": "799105436417",
+    "training": "production",
+    "register": "WEB",
+    "agent": "WEB",
+    "date": "2017-11-26 18:39:43",
+    "attributes": {
+      "PRT_GFTRC": true
+    }
+  },
+  "fulfillmentInfo": {
+    "fgType": "pickup",
+    "fgStore": "6",
+    "fgDate": "12/01/17",
+    "fgTime": "5:00PM",
+    "fgNameFirst": "Alga Rithm",
+    "fGNameLast": true,
+    "items": [
+      {
+        "description": "Velvet Jewelry Roll Assorted  7-1/2\" x 11-1/2\"",
+        "sku": "330120",
+        "quantity": "3",
+        "customerPrice": "14.99",
+        "retailPrice": "14.99",
+        "cut": null,
+        "taxable": "Y"
+      },
+      {
+        "description": "Pack-It^ Cube Black Set of 3",
+        "sku": "10062749",
+        "quantity": "1",
+        "customerPrice": "22.36",
+        "retailPrice": "27.95",
+        "cut": null,
+        "taxable": "Y"
+      },
+      {
+        "description": "Pack-It^ Cube Blue Set of 3",
+        "sku": 10062770,
+        "quantity": 1,
+        "customerPrice": "22.36",
+        "retailPrice": "27.95",
+        "cut": null,
+        "taxable": "Y"
+      },
+      {
+        "description": "Pack-It^ Large Folder Blue  20\" x 14\"",
+        "sku": "10062773",
+        "quantity": "1",
+        "customerPrice": "23.07",
+        "retailPrice": "32.95",
+        "cut": null,
+        "Taxable": "Y"
+      }
+    ],
+    "totalInfo": {
+      "subTotal": "112.76",
+      "fees": [
         {
-          "description": "Velvet Jewelry Roll Assorted  7-1/2\" x 11-1/2\"",
-          "sku": "330120",
-          "quantity": "3",
-          "customerPrice": "14.99",
-          "retailPrice": "14.99",
-          "cut": null,
-          "taxable": "Y"
-        },
-        {
-          "description": "Pack-It^ Cube Black Set of 3",
-          "sku": "10062749",
-          "quantity": "1",
-          "customerPrice": "22.36",
-          "retailPrice": "27.95",
-          "cut": null,
-          "taxable": "Y"
-        },
-        {
-          "description": "Pack-It^ Cube Blue Set of 3",
-          "sku": 10062770,
-          "quantity": 1,
-          "customerPrice": "22.36",
-          "retailPrice": "27.95",
-          "cut": null,
-          "taxable": "Y"
-        },
-        {
-          "description": "Pack-It^ Large Folder Blue  20\" x 14\"",
-          "sku": "10062773",
-          "quantity": "1",
-          "customerPrice": "23.07",
-          "retailPrice": "32.95",
-          "cut": null,
-          "Taxable": "Y"
+          "id": "DELIVER",
+          "amount": "13.45"
         }
       ],
-      "totalInfo": {
-        "subTotal": "112.76",
-        "fees": [
-          {
-            "id": "DELIVER",
-            "amount": "13.45"
-          }
-        ],
-        "tax": "9.3",
-        "taxRate": "0"
-      }
-    },
-    "tenders": [
-      {
-        "type": "M",
-        "account": "XXXXXXXXXXXX-8129",
-        "amount": "122.06",
-        "change": null,
-        "auth": "ABC",
-        "merchant": "268374",
-        "financePromoCode": null,
-        "financeTermsConditions": null,
-        "giftCardBinRange": null,
-        "emvAprReceiptFlds": "Application Label: Visa|    CHIP|    AID: 00002|    TVR: 00003|    IAD: 00004|    TSI: 00005|    ARC: 00006"
-      }
-    ]
-  }
+      "tax": "9.3",
+      "taxRate": "0"
+    }
+  },
+  "tenders": [
+    {
+      "type": "M",
+      "account": "XXXXXXXXXXXX-8129",
+      "amount": "122.06",
+      "auth": "ABC",
+      "financePromoCode": null,
+      "financeTermsConditions": null,
+      "giftCardBinRange": null,
+      "emvAprReceiptFlds": "Application Label: Visa|    CHIP|    AID: 00002|    TVR: 00003|    IAD: 00004|    TSI: 00005|    ARC: 00006"
+    }
+  ]
 }
